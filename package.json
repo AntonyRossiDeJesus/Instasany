@@ -2,7 +2,6 @@
   "name": "projeto-max-designs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://seu-usuario-github.github.io/Instasany",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
