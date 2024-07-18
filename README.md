@@ -12,7 +12,7 @@
 <div align="center" >
     <h2 align="center" >⚡Stats⚡</h2>
 
-    [<img loading="lazy" src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Camila Fernanda Alves</sub>](https://github.com/camilafernanda) ]
+    <img loading="lazy" src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Camila Fernanda Alves</sub>](https://github.com/camilafernanda)
 </div>
 <div align="center">
   <a href="https://github.com/AntonyRossiDeJesus">
