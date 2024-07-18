@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 import IconFile from "@/assets/icon-file.svg";
-import IconHand from "@/assets/icon-hand.svg";
 import IconHand02 from "@/assets/icon-hand-02.svg";
+import IconHand from "@/assets/icon-hand.svg";
 import IconMockup from "@/assets/mockup.svg";
 
-import { GridContainer } from "./grid";
 import gsap from "gsap";
+import { GridContainer } from "./grid";
 
 export function SectionHero() {
   const textHeroRef = useRef(null);
@@ -68,19 +68,19 @@ export function SectionHero() {
           <h3 className="text-xl font-medium text-green-actived mb-4">
             Novo curso focado em instagram
           </h3>
-          <h1 className="text-white text-7xl/normal font-semibold mb-2">
+          <h1 className="text-white text-3xl md:text-5xl/normal lg:7xl font-semibold mb-2">
             Destrave as suas habilidades
           </h1>
 
           <div className="flex items-center justify-center gap-10">
             <button className="flex items-center gap-2">
               <Image src={IconFile} alt="icone de file" />
-              <span className="text-white font-medium">
+              <span className="text-white font-medium text-xs md:text-base">
                 Assinar lista de espera
               </span>
             </button>
 
-            <button className="py-4 px-5 bg-green-btn rounded-full text-green-primary font-bold">
+            <button className="py-4 px-5 bg-green-btn rounded-full text-green-primary font-bold text-[10px] md:text-base">
               Começar agora
             </button>
           </div>
@@ -99,17 +99,17 @@ export function SectionHero() {
           />
         </div>
 
-        <div className="absolute -bottom-44 w-full max-w-area-mockups flex justify-between ">
+        <div className="absolute -bottom-44 w-[600px] md:min-w-[968px] flex justify-between ">
           <Image
             src={IconMockup}
             alt="mockup"
-            className="relative top-[1.1rem] left-[3.3rem]"
+            className="relative top-[1.1rem]   md:left-[3.3rem]"
             ref={mockupLeftRef}
           />
           <Image
             src={IconMockup}
             alt="mockup"
-            className="relative top-[1.1rem] right-[3.3rem]"
+            className="relative top-[1.1rem] md:right-[3.3rem]"
             ref={mockupRightRef}
           />
         </div>

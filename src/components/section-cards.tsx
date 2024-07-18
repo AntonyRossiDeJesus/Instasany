@@ -2,17 +2,17 @@
 
 import Image from "next/image";
 
-import Mockup from "@/assets/mockup-main.png";
 import Card01 from "@/assets/image-01.png";
 import Card02 from "@/assets/image-02.png";
 import Card03 from "@/assets/image-03.png";
 import Card04 from "@/assets/image-04.png";
 import Card05 from "@/assets/image-05.png";
 import Card06 from "@/assets/image-06.png";
+import Mockup from "@/assets/mockup-main.png";
 
-import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -108,7 +108,7 @@ export function SectionCards() {
       />
 
       <h2
-        className="text-center text-7xl font-semibold text-black mb-56 opacity-0"
+        className="text-center text-5xl lg:text-7xl font-semibold text-black mb-56 opacity-0"
         ref={titleRef}
       >
         Faça
@@ -116,34 +116,34 @@ export function SectionCards() {
         mesmo de casa
       </h2>
 
-      <div className="relative w-full max-w-area-cards mx-auto h-area-cards">
+      <div className="relative w-full max-w-area-cards mx-auto h-area-cards overflow-hidden">
         <Image
           src={Card01}
-          className="absolute top-8 left-44 opacity-0"
+          className="absolute top-8 -left-32 md:left-44 opacity-0"
           alt="Card 1"
           ref={card01Ref}
         />
         <Image
           src={Card02}
-          className="absolute left-0 bottom-32 opacity-0"
+          className="absolute -left-20 md:left-0 bottom-40 md:bottom-32 opacity-0 z-10 "
           alt="Card 2"
           ref={card02Ref}
         />
         <Image
           src={Card03}
-          className="absolute bottom-0 left-80 opacity-0"
+          className="absolute bottom-10 md:bottom-0 left-52 md:left-80 opacity-0 hidden md:block"
           alt="Card 3"
           ref={card03Ref}
         />
         <Image
           src={Card04}
-          className="absolute top-0 right-32 opacity-0"
+          className="absolute top-0 -right-24 md:right-32 opacity-0 z-10 "
           alt="Card 4"
           ref={card04Ref}
         />
         <Image
           src={Card05}
-          className="absolute right-0 bottom-28 opacity-0"
+          className="absolute -right-10 md:right-0 bottom-40 md:bottom-28 opacity-0"
           alt="Card 5"
           ref={card05Ref}
         />

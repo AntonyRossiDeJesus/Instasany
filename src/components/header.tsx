@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import LogoImg from "@/assets/logo.svg";
 import SearchIcon from "@/assets/icon-search.svg";
 import UserIcon from "@/assets/icon-user.svg";
+import LogoImg from "@/assets/logo.svg";
 
 import { GridContainer } from "@/components/grid";
 
@@ -20,11 +20,11 @@ export function Header() {
     "bg-green-actived text-opacity-100 text-white rounded-full";
   return (
     <header className="relative w-full h-24 bg-green-primary flex items-center justify-center">
-      <GridContainer className="flex items-center justify-between">
-        <Image src={LogoImg} alt="logo" />
+      <GridContainer className="flex items-center justify-between ">
+        <Image className="w-[170px]" src={LogoImg} alt="logo" />
 
         <div className="flex items-center gap-20">
-          <nav className="flex gap-2">
+          <nav className="gap-2 hidden xl:flex">
             {arryMenu.map((item, index) => (
               <Link
                 key={index}
